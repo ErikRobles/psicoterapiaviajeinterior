@@ -1,8 +1,12 @@
 {
   "name": "psicoterapiaviajeinterior",
-  "hompepage": "./psicoterapiaviajeinterior",
+  "hompepage": "http://www.rrspark.com/psicoterapiaviajeinterior",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "0.15.1",
+    "npm": "6.9.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
