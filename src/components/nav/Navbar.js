@@ -15,16 +15,16 @@ export default class CustomNavbar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
             <Nav pullRight>
-                <LinkContainer to="/">
+                <LinkContainer to="./">
                     <NavItem>Viaje Interior</NavItem>
                 </LinkContainer>
-                <LinkContainer to="/terapia">
+                <LinkContainer to="./terapia">
                     <NavItem>Terapia</NavItem>
                 </LinkContainer>
-                <LinkContainer to="/preguntasfrecuentes">
+                <LinkContainer to="./preguntasfrecuentes">
                     <NavItem>Pretguntas Frecuentes</NavItem>
                 </LinkContainer>
-                <LinkContainer to="/preguntasfrecuentes">
+                <LinkContainer to="./Contacto">
                     <NavItem>Contacto</NavItem>
                 </LinkContainer>  
             </Nav>
