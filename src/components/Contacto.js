@@ -64,7 +64,7 @@ class Contacto extends Component {
     })
     .then(res=>{
   //    console.log("axios response "+JSON.stringify(res));
-      console.log("rest data "+res.data);
+      console.log("rest data "+res.data.sent);
       this.setState( {
         mailSent: res.data.sent
       })

@@ -13,7 +13,17 @@ if ($_POST){
     $msg = $_POST['message']; 
     $mailTo = "erikjames69@hotmail.com";
     $headers = "De: " . $mailFrom;
-    $txt = "Recibiste un correo de ".$name .".\n\n" .$message;      
+    $txt = "Recibiste un correo de ".$name .".\n\n" .$message;
+    
+    
+    $data = $_POST[$name] . '-' . $_POST[$subject] . '-' . $_POST[$msg] . "\r\n";
+    $ret = file_put_contents('/mydata.txt', $data, FILE_APPEND | LOCK_EX);
+    if($ret === false) {
+        die('There was an error writing this file');
+    }
+    else {
+        echo "$ret bytes written to file";
+    }
     
     mail($mailTo, $subject, $txt, $headers);
     //echo json_encode( $_POST );
