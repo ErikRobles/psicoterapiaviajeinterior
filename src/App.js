@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Route from 'react-router-dom/Route';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ViajeInterior from './components/ViajeInterior';
 import Terapia from './components/Terapia';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
