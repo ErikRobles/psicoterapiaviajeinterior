@@ -35,16 +35,16 @@ class SimpleSlider extends Component {
         <Styles>
         <Slider {...settings} className="sliderElement">
           <div className="center-item">
-            <Image src={seagull}  />
+            <Image src={seagull} fluid />
           </div>
           <div>
-          <Image src={rubicks}  />
+          <Image src={rubicks} fluid />
           </div>
           <div>
-          <Image src={cupid}  />
+          <Image src={cupid} fluid />
           </div>
           <div>
-          <Image src={lock}  />
+          <Image src={lock} fluid />
           </div>
         </Slider>
         </Styles>
