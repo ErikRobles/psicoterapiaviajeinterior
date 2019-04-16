@@ -10,7 +10,6 @@ import styled from 'styled-components';
 const Styles = styled.div`
    .sliderElement {
      padding-top: 100px;
-     margin: 0 auto;
    }
 `;
 
@@ -35,17 +34,17 @@ class SimpleSlider extends Component {
       <div>
         <Styles>
         <Slider {...settings} className="sliderElement">
-          <div>
-            <Image src={seagull} fluid />
+          <div className="center-item">
+            <Image src={seagull}  />
           </div>
           <div>
-          <Image src={rubicks} fluid />
+          <Image src={rubicks}  />
           </div>
           <div>
-          <Image src={cupid} fluid />
+          <Image src={cupid}  />
           </div>
           <div>
-          <Image src={lock} fluid />
+          <Image src={lock}  />
           </div>
         </Slider>
         </Styles>
