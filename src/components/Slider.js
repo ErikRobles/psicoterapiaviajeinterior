@@ -18,6 +18,8 @@ const Styles = styled.div`
 class SimpleSlider extends Component {
   render() {
     const settings = {
+      className: "center",
+      centerMode: true,
       dots: false,
       arrows: false,
       infinite: true,
