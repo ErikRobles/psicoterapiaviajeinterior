@@ -10,6 +10,7 @@ import styled from 'styled-components';
 const Styles = styled.div`
    .sliderElement {
      padding-top: 100px;
+     margin: 0 auto;
    }
 `;
 
