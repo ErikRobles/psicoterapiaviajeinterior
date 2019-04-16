@@ -12,7 +12,7 @@ const Styles = styled.div`
    } 
 `;  
 
-const API_PATH = 'http://www.rrspark.com/psicoterapiaviajeinterior.com/api/contact/index.php';
+const API_PATH = 'https://psicoterapiaviajeinterior.herokuapp.com/api/contact/index.php';
 
 class Contacto extends Component {
   constructor (props) {
