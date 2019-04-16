@@ -12,7 +12,11 @@ const Styles = styled.div`
    }
 `;
 
+<<<<<<< HEAD
 const API_PATH = '/api/contact/index.php';
+=======
+const API_PATH = 'http://www.rrspark.com/psicoterapiaviajeinterior/api/contact/index.php';
+>>>>>>> a66475eda789f53240db9cfb0d3f68f499656050
 console.log(API_PATH);
 class Contacto extends Component {
   constructor (props) {
@@ -57,7 +61,7 @@ class Contacto extends Component {
     })
     .then(res=>{
   //    console.log("axios response "+JSON.stringify(res));
-    //  console.log("rest data "+res.data);
+      console.log("rest data "+res.data);
     }).catch(error=>this.setState({error:error.message}));
 
   }
