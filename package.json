@@ -1,6 +1,7 @@
 {
   "name": "psicoterapiaviajeinterior",
   "homepage": "http://www.rrspark.com/psicoterapiaviajeinterior/",
+  "author": "Erik Robles",
   "version": "0.1.0",
   "private": true,
   "engines": {
