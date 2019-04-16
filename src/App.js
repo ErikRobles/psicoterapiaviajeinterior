@@ -14,7 +14,7 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 class App extends Component { 
   render() {
     return (
-      <Router>
+      <Router basename="/psicoterapiaviajeinterior/">
       <div className="App head-image">
       <Navbar></Navbar>
         <Route exact path="/" component={ViajeInterior} />  
