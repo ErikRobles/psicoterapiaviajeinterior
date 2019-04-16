@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Link } from 'react-bootstrap';
 
 export default class CustomNavbar extends Component {
   render() {
@@ -15,18 +15,18 @@ export default class CustomNavbar extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
             <Nav pullRight>
-                <LinkContainer to="./">
+                <Link to="/">
                     <NavItem>Viaje Interior</NavItem>
-                </LinkContainer>
-                <LinkContainer to="./terapia">
+                </Link>
+                <Link to="/terapia">
                     <NavItem>Terapia</NavItem>
-                </LinkContainer>
-                <LinkContainer to="./preguntasfrecuentes">
+                </Link>
+                <Link to="/preguntasfrecuentes">
                     <NavItem>Pretguntas Frecuentes</NavItem>
-                </LinkContainer>
-                <LinkContainer to="./Contacto">
+                </Link>
+                <Link to="/Contacto">
                     <NavItem>Contacto</NavItem>
-                </LinkContainer>  
+                </Link>  
             </Nav>
         </Navbar.Collapse>
       </Navbar>
