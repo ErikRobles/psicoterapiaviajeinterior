@@ -12,7 +12,8 @@ const Styles = styled.div`
    }
 `;
 
-const API_PATH = 'http://www.rrspark.com/psicoterapiaviajeinterior/api/contact/index.php';
+//const API_PATH = 'http://www.rrspark.com/psicoterapiaviajeinterior/api/contact/index.php';
+const API_PATH='http://www.rrspark.com/api/api.php'a
 console.log(API_PATH);
 class Contacto extends Component {
   constructor (props) {
