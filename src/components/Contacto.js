@@ -10,6 +10,12 @@ const Styles = styled.div`
    .headroom {
      padding-top: 300px;
    }
+   .successText {
+     border: 3px solid green;
+     padding: 5px 15px;
+     font-weight: bold;
+     color: #fff;
+   }
 `;
 
 //const API_PATH = 'http://www.rrspark.com/psicoterapiaviajeinterior/api/contact/index.php';
@@ -59,6 +65,10 @@ class Contacto extends Component {
     .then(res=>{
   //    console.log("axios response "+JSON.stringify(res));
       console.log("rest data "+res.data);
+      this.setState( {
+        mailSent: res.data.sent
+      })
+      console.log(this.state);
     }).catch(error=>this.setState({error:error.message}));
 
   }
@@ -116,7 +126,7 @@ class Contacto extends Component {
                     </div>
                         <Recaptcha />
                         <button type="submit" onClick={e => this.handleFormSubmit(e)} name="submit" className="mt-3 shadow btn btn-primary">Enviar</button>
-                        <div>{this.state.mailSent &&<div>Gracias por contactarnos.</div>}</div>
+                        <div>{this.state.mailSent &&<div className="successText">Gracias por contactarnos.</div>}</div>
                         </form>
                     </main>
                   </div>
