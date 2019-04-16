@@ -9,19 +9,19 @@ import Navbar from './components/CustomNavBar';
 import Footer from './components/Footer';
 import CV from './components/CV';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
-
-
+ 
+  
 class App extends Component { 
   render() {
     return (
       <Router>
       <div className="App head-image">
       <Navbar></Navbar>
-        <Route exact={true} path="/" component={ViajeInterior} />  
-        <Route exact={true} path="/terapia" component={Terapia} />      
-        <Route exact={true} path="/preguntasfrecuentes" component={PreguntasFrecuentes} />      
-        <Route exact={true} path="/contacto" component={Contacto} />
-        <Route exact={true} path="/CV" component={CV} />
+        <Route exact path="/" component={ViajeInterior} />  
+        <Route exact path="/terapia" component={Terapia} />      
+        <Route exact path="/preguntasfrecuentes" component={PreguntasFrecuentes} />      
+        <Route exact path="/contacto" component={Contacto} />
+        <Route exact path="/CV" component={CV} />
         <Footer />          
       </div>
       </Router>

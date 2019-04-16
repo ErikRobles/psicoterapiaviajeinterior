@@ -12,16 +12,8 @@ const Styles = styled.div`
    }
 `;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-const API_PATH = '/api/contact/index.php';
-=======
-const API_PATH = 'http://www.rrspark.com/psicoterapiaviajeinterior/api/contact/index.php';
->>>>>>> a66475eda789f53240db9cfb0d3f68f499656050
-=======
 //const API_PATH = 'http://www.rrspark.com/psicoterapiaviajeinterior/api/contact/index.php';
 const API_PATH='http://www.rrspark.com/api/api.php'
->>>>>>> refs/remotes/origin/master
 console.log(API_PATH);
 class Contacto extends Component {
   constructor (props) {

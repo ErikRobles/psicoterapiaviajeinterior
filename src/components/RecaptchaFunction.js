@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Recaptcha from 'react-recaptcha';
 
-const TEST_SITE_KEY = "6LfLZ54UAAAAADCMqoNtL3XEjpHD7IWtyrbiUpsF";
+const TEST_SITE_KEY = "xxxxxxxxxxxxxxxx-etc";
 
 export default class RecaptchaFunction extends Component {
   constructor(props) {
